@@ -254,7 +254,7 @@ export default function Portfolio() {
                 title="Librora"
                 desc="Library Management System built with Laravel 12 and Laragon."
                 tech={["PHP", "Blade", "CSS", "JavaScript"]}
-                image="Library.jpeg"
+                image="library.jpeg"
                 url="https://github.com/ReygaDirga/Library"
               />
 
