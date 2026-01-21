@@ -167,7 +167,7 @@ export default function Portfolio() {
           <div className="w-64 h-64 md:w-96 md:h-96 bg-emerald-500 rounded-full absolute -bottom-4 -right-4 z-0 opacity-10 blur-3xl"></div>
           <div className="relative z-10 border-[12px] border-[#1e293b] rounded-full overflow-hidden w-64 h-64 md:w-[400px] md:h-[400px] shadow-2xl outline outline-2 outline-emerald-500/50">
             <img
-              src="profile.jpeg"
+              src="profil.jpeg"
               alt="Profile"
               className="w-full h-full object-cover bg-slate-800"
             />
