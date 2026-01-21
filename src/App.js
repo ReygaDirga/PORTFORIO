@@ -112,7 +112,7 @@ export default function Portfolio() {
             I Am <span className="text-emerald-500">Rio Dwi Oktavianto</span>
           </h1>
           <p className="text-slate-400 text-lg mb-8 max-w-lg leading-relaxed">
-            Frontend Web Developer | SQL-Driven.
+            Frontend Developer
           </p>
 
           <div className="flex flex-col md:flex-row items-center gap-6">
