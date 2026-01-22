@@ -48,8 +48,8 @@ export default function Portfolio() {
 
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-slate-200 font-sans selection:bg-emerald-500/30 overflow-x-hidden">
-      <nav className="fixed top-0 w-full z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/5">
+    <div className="min-h-screen bg-[#1f2229] text-slate-200 font-sans selection:bg-[#01eeff]/30 overflow-x-hidden">
+      <nav className="fixed top-0 w-full z-50 bg-[#1f2229]/80 backdrop-blur-md border-b border-white/5">
         <div className="flex justify-between items-center px-6 md:px-10 py-5 max-w-7xl mx-auto">
           <div className="text-xl font-bold tracking-tighter text-white">
             PORTFORIO
@@ -59,7 +59,7 @@ export default function Portfolio() {
               <a
                 key={link.name}
                 href={link.href}
-                className="hover:text-emerald-500 transition"
+                className="hover:text-[#01eeff] transition"
               >
                 {link.name}
               </a>
@@ -78,7 +78,7 @@ export default function Portfolio() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-[#0f0f0f] border-b border-white/5 overflow-hidden"
+              className="md:hidden bg-[#1f2229] border-b border-white/5 overflow-hidden"
             >
               <div className="flex flex-col gap-4 p-6 text-center text-sm font-bold uppercase tracking-widest text-slate-400">
                 {navLinks.map((link) => (
@@ -86,7 +86,7 @@ export default function Portfolio() {
                     key={link.name}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="py-2 hover:text-emerald-500 transition"
+                    className="py-2 hover:text-[#01eeff] transition"
                   >
                     {link.name}
                   </a>
@@ -105,11 +105,11 @@ export default function Portfolio() {
           animate={{ opacity: 1, y: 0 }}
           className="flex-1 text-center md:text-left flex flex-col items-center md:items-start"
         >
-          <p className="text-emerald-500 font-bold tracking-widest uppercase text-sm mb-3">
+          <p className="text-[#01eeff] font-bold tracking-widest uppercase text-sm mb-3">
             Hello, People!
           </p>
           <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight">
-            I Am <span className="text-emerald-500">Rio Dwi Oktavianto</span>
+            I Am <span className="text-[#01eeff]">Rio Dwi Oktavianto</span>
           </h1>
           <p className="text-slate-400 text-lg mb-8 max-w-lg leading-relaxed">
             Frontend Developer.
@@ -120,7 +120,7 @@ export default function Portfolio() {
               href="https://wa.me/6281219883509"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-emerald-500 hover:bg-emerald-600 text-white px-10 py-4 rounded-full font-black uppercase tracking-widest text-sm transition-all shadow-lg shadow-emerald-500/20"
+              className="inline-block bg-[#01eeff] hover:bg-[#01eeff]/80 text-[#1f2229] px-10 py-4 rounded-full font-black uppercase tracking-widest text-sm transition-all shadow-lg shadow-[#01eeff]/20"
             >
               Let's Talk
             </a>
@@ -164,8 +164,8 @@ export default function Portfolio() {
           animate={{ opacity: 1, scale: 1 }}
           className="relative"
         >
-          <div className="w-64 h-64 md:w-96 md:h-96 bg-emerald-500 rounded-full absolute -bottom-4 -right-4 z-0 opacity-10 blur-3xl"></div>
-          <div className="relative z-10 border-[12px] border-[#1e293b] rounded-full overflow-hidden w-64 h-64 md:w-[400px] md:h-[400px] shadow-2xl outline outline-2 outline-emerald-500/50">
+          <div className="w-64 h-64 md:w-96 md:h-96 bg-[#01eeff] rounded-full absolute -bottom-4 -right-4 z-0 opacity-10 blur-3xl"></div>
+          <div className="relative z-10 border-[12px] border-[#1f2229] rounded-full overflow-hidden w-64 h-64 md:w-[400px] md:h-[400px] shadow-2xl outline outline-2 outline-[#01eeff]">
             <img
               src="profil.jpeg"
               alt="Profile"
@@ -176,10 +176,10 @@ export default function Portfolio() {
       </section>
       <section
         id="about"
-        className="bg-[#111111] py-24 border-y border-white/5"
+        className="bg-[#1f2229] py-24 border-y border-white/5"
       >
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-xs font-black text-emerald-500 uppercase tracking-[0.4em] mb-6">
+          <h2 className="text-xs font-black text-[#01eeff] uppercase tracking-[0.4em] mb-6">
             About Me
           </h2>
           <p className="text-2xl md:text-4xl font-light text-white leading-tight italic mb-8">
@@ -190,10 +190,10 @@ export default function Portfolio() {
           </p>
         </div>
       </section>
-      <section id="skills" className="py-10 max-w-7xl mx-auto px-6">
+      <section id="skills" className="py-10 max-w-7xl mx-auto px-6 bg-[#`1f2229`]">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-6 text-center md:text-left">
           <div className="flex flex-col items-center md:items-start">
-            <h2 className="text-xs font-black text-emerald-500 uppercase tracking-[0.4em] mb-3">
+            <h2 className="text-xs font-black text-[#01eeff] uppercase tracking-[0.4em] mb-3">
               Capabilities
             </h2>
             <h3 className="text-4xl md:text-5xl font-bold text-white">
@@ -208,11 +208,11 @@ export default function Portfolio() {
               key={name}
               whileHover={{ scale: 1.05 }}
               className="bg-[#161b22] p-8 rounded-3xl flex flex-col items-center justify-center
-                        border border-white/5 hover:border-emerald-500/50 transition-all group"
+                        border border-white/5 hover:border-[#01eeff] transition-all group"
             >
               <Icon
                 size={32}
-                className="text-slate-500 group-hover:text-emerald-500 mb-4 transition"
+                className="text-slate-500 group-hover:text-[#01eeff] mb-4 transition"
               />
               <span className="text-xs font-black text-slate-400 group-hover:text-white uppercase tracking-widest text-center">
                 {name}
@@ -222,10 +222,10 @@ export default function Portfolio() {
         </div>
 
       </section>
-      <section id="projects" className="py-24 bg-[#0a0a0a] px-6">
+      <section id="projects" className="py-24 bg-[#1f2229] px-6">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 text-center md:text-left">
-            <h2 className="text-xs font-black text-emerald-500 uppercase tracking-[0.4em] mb-3">
+            <h2 className="text-xs font-black text-[#01eeff] uppercase tracking-[0.4em] mb-3">
               Portfolio
             </h2>
             <h3 className="text-4xl md:text-5xl font-bold text-white">
@@ -293,16 +293,16 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <footer className="bg-black text-center py-24 px-6">
+      <footer className="bg-[#1f2229] text-center py-24 px-6">
         <div className="max-w-4xl mx-auto space-y-10">
           <h2 className="text-white text-4xl md:text-5xl font-extrabold">
             Ready to start?
           </h2>
-          <div className="h-px w-20 bg-emerald-500/40 mx-auto" />
+          <div className="h-px w-20 bg-[#01eeff]/40 mx-auto" />
           <a
             href="mailto:dwioktaviantor@gmail.com"
-            className="group inline-flex items-center gap-3 text-emerald-400 text-2xl md:text-3xl font-semibold
-                      hover:text-emerald-300 transition"
+            className="group inline-flex items-center gap-3 text-[#01eeff] text-2xl md:text-3xl font-semibold
+                      hover:text-[#01eeff]/50 transition"
           >
             dwioktaviantor@gmail.com
             <span className="group-hover:translate-x-1 transition">→</span>
